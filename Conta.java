@@ -4,10 +4,22 @@ public class Conta {
     int numero;
     String titular;
 
-    //Maneira de depositar dinheiro em uma conta
+    
 
     public void deposita( double valor) {
-        this.saldo = this.saldo + valor;
+        this.saldo += valor;
 
     } 
+
+    public boolean saca (double valor) {
+      if(this.saldo >= valor ) {
+        this.saldo -= valor;
+        return true;
+
+      } else {
+        return false;
+      }
+      
+     }
+
 }
