@@ -23,8 +23,8 @@ public class TestaMetodo {
                  System.out.print("");
                  System.out.println("o valor disponivel para transferencia é de: " + contaDaMarcela.saldo);
         }
-        //System.out.println("Novo saldo da conta da Marcela " + contaDoPaulo.saldo);
-        //System.out.println("Novo saldo da conta do Paulo " + contaDaMarcela.saldo);
+        System.out.println("Novo saldo da conta do Paulo " + contaDoPaulo.saldo);
+        System.out.println("Novo saldo da conta da Marcela " + contaDaMarcela.saldo);
 
 
     }
