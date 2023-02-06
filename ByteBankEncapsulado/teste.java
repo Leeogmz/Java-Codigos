@@ -2,7 +2,7 @@
 public class teste {
     
         public static void main(String[] args) {
-            Conta conta = new Conta();
+            Conta conta = new Conta(297, 20055);
             conta.setNumero(1337);
             System.out.println(conta.getNumero());
 
