@@ -1,8 +1,8 @@
 //Gerente herda da classe Funcionario
 public class  Gerente extends Funcionario {   
     
-    private int senha;  
-    
+    private int senha;
+   
     public boolean autentica(int senha){
         if(this.senha == senha) {
             return true ;
@@ -16,7 +16,7 @@ public class  Gerente extends Funcionario {
     }
 
     public double getBonificacao(){
-       return super.salario;
+       return super.getBonificacao() + super.getSalario();
     }
 }
     
