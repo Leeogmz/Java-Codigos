@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
     private double saldo;
     private int agencia;
     private int numero;
@@ -22,15 +22,18 @@ public class Conta {
 
     public void deposita( double valor) {
         this.saldo += valor;
+        System.out.println("Deposito realizado com sucesso, você depositou " + valor);
 
     } 
 
     public boolean saca (double valor) {
       if(this.saldo >= valor ) {
         this.saldo -= valor;
+        System.out.println("Saque realizado com sucesso, seu saldo é " + this.saldo);
         return true ;
 
       } else {
+        System.out.println("Você não possui saldo suficiente, seu saldo é: " + this.saldo);
         return false;
       }
       
@@ -40,9 +43,11 @@ public boolean transfere (double valor,Conta destino){
 
     if(this.saca(valor)) {
         destino.deposita(valor);
+        System.out.println("Você acabou de transferir: " + valor);
         return true;
 
     } else {
+      System.out.println("Você não possui saldo suficiente, seu saldo é: " + this.saldo);
         return false;
     }
 }

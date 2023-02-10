@@ -10,5 +10,7 @@ public class TesteContas {
 
         System.out.println("Saldo Conta Correte" + cc.getSaldo());
         System.out.println("Saldo Conta poupança" + cp.getSaldo());
+
+        cc.saca(50);
     }
 }
