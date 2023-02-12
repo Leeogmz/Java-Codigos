@@ -1,4 +1,9 @@
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel {
+
+    @Override
+    public double getValorImposto() {
+        return super.getSaldo() * 0.01;
+    }
 
     public ContaCorrente(int agencia, int numero){
 
