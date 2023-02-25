@@ -9,7 +9,6 @@ public class TestaConexao {
         } catch (Exception ex) {
             System.out.println("Deu erro na conexao");
         }
-
     }
 }
 
