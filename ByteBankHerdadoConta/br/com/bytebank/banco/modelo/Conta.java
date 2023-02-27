@@ -1,4 +1,11 @@
 package br.com.bytebank.banco.modelo;
+
+
+/**
+ * Classe representa a moldura de uma conta
+ * @author Leonardo Gomes
+ * 
+ */
 public abstract class Conta {
     private double saldo;
     private int agencia;
@@ -6,7 +13,11 @@ public abstract class Conta {
     private Cliente titular;
     private static int total;
 
-    
+    /**
+     * Construtor para inicializar o objeto conta a partir da agencia e numero
+     * @param agencia
+     * @param numero
+    */
     public Conta (int agencia, int numero) {
       if(agencia < 1) {
         throw new IllegalArgumentException("Agencia inválida");
@@ -32,7 +43,11 @@ public abstract class Conta {
         System.out.println("Deposito realizado com sucesso, você depositou " + valor);
 
     } 
-
+/**
+ * Valor precisa ser maior do que o saldo.
+ * @param valor
+ * @throws SaldoInsuficienteException
+ */
     public void saca (double valor) throws SaldoInsuficienteException {
 
       if(this.saldo < valor ) {
