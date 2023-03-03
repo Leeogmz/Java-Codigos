@@ -29,9 +29,7 @@ public abstract class Conta {
       System.out.println("O total de contas é: " + Conta.total );
       this.agencia = agencia;
       this.numero = numero;
-      System.out.println("Nova Conta criada:");
-      System.out.println();
-      System.out.println("Numero da agencia: " + this.agencia + " Numero da conta: " + this.numero);
+      
       
 
     }
@@ -102,6 +100,12 @@ public void transfere (double valor,Conta destino) throws SaldoInsuficienteExcep
   public static int getTotalDeContas(){
     return Conta.total;
   }
+  
+  @Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return "Numero: "  +this.getNumero() + " Agencia: " + this.getAgencia();
+}
  
 }
 

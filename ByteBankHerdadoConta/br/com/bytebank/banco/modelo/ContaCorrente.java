@@ -17,4 +17,10 @@ public class ContaCorrente extends Conta implements Tributavel {
         super.saca(valorSaque);
     }
     
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return "Conta corrente, " + super.toString();
+    }
+    
 }

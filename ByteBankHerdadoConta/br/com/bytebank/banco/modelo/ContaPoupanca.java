@@ -5,4 +5,10 @@ public class ContaPoupanca extends Conta {
         super(agencia, numero);
     }
     
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return "Conta poupança, " + super.toString();
+    }
+    
 }
