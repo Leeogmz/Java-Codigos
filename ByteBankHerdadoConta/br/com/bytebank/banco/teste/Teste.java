@@ -1,42 +1,33 @@
 package br.com.bytebank.banco.teste;
 
-import br.com.bytebank.banco.modelo.*;
-
-
 public class Teste {
+	
+	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 System.out.println("x");
-	     System.out.println(3);
-	     System.out.println(false);
 
-	     Object cc = new ContaCorrente(22, 33);
-	     Object cp = new ContaPoupanca(33, 22);
-	     Object clien = new Cliente();
-		
-		System.out.println(cc.toString());
-		System.out.println(cp);
 
-		
-		println(cc);
-		println(cp);
-	    println(clien);
 
-		
+        int[] idades = new int[5];//já inicializa o array com os valores padrões = 0
+        
+        idades[0] = 19;
+        
+        int idade1 = idades[0];
+
+        System.out.println(idade1);
+
+
+	        
+        //int idade1= 9;
+        int idade2 = 19;
+        int idade3 = 29;
+        int idade4 = 39;
+        int idade5 = 49;
+
+
+
+
+
+    }
     
-	}
-    static void println() {
-    }
-
-    static void println(int a) {
-    }
-
-    static void println(boolean valor) {
-    }
-    static void println(Object referencia) {
-    }
-
 }
-
-
