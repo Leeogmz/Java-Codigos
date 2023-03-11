@@ -9,7 +9,7 @@ public class TesteArrayReferencias {
 
     public static void main(String[] args) {
       
-        Object[] referencias = new Object[5];
+        Conta[] referencias = new Conta[5];
 
 
         ContaCorrente cc1 = new ContaCorrente(22, 11);
